@@ -1,0 +1,158 @@
+
+> quran-academy-api@0.5.0 test
+> node --test test/*.test.js
+
+TAP version 13
+# Subtest: IDs and timezone safety
+ok 1 - IDs and timezone safety
+  ---
+  duration_ms: 15.843637
+  type: 'test'
+  ...
+# Subtest: availability refuses overlapping local windows
+ok 2 - availability refuses overlapping local windows
+  ---
+  duration_ms: 1.040817
+  type: 'test'
+  ...
+# Subtest: weekly slots convert UTC to Pakistani local time
+ok 3 - weekly slots convert UTC to Pakistani local time
+  ---
+  duration_ms: 1.428029
+  type: 'test'
+  ...
+# Subtest: daylight savings change still uses tutor local clock
+ok 4 - daylight savings change still uses tutor local clock
+  ---
+  duration_ms: 0.625794
+  type: 'test'
+  ...
+# Subtest: overnight class cannot escape availability window
+ok 5 - overnight class cannot escape availability window
+  ---
+  duration_ms: 0.462554
+  type: 'test'
+  ...
+# Subtest: messaging is restricted to student and tutor participants
+ok 6 - messaging is restricted to student and tutor participants
+  ---
+  duration_ms: 0.134999
+  type: 'test'
+  ...
+# Subtest: messages trim, reject empty and oversized bodies
+ok 7 - messages trim, reject empty and oversized bodies
+  ---
+  duration_ms: 0.215868
+  type: 'test'
+  ...
+# Subtest: booking window cannot be in past, too long or over 90 days away
+ok 8 - booking window cannot be in past, too long or over 90 days away
+  ---
+  duration_ms: 0.153516
+  type: 'test'
+  ...
+# Subtest: Supported two-decimal currencies only, commission bounds
+ok 9 - Supported two-decimal currencies only, commission bounds
+  ---
+  duration_ms: 0.857407
+  type: 'test'
+  ...
+# Subtest: 30/60-minute quote rounds minor units half up
+ok 10 - 30/60-minute quote rounds minor units half up
+  ---
+  duration_ms: 0.913409
+  type: 'test'
+  ...
+# Subtest: Never accept scientific notation, negatives, more than 2 decimals or invalid duration
+ok 11 - Never accept scientific notation, negatives, more than 2 decimals or invalid duration
+  ---
+  duration_ms: 1.108987
+  type: 'test'
+  ...
+# Subtest: Commission split always sums to invoice gross
+ok 12 - Commission split always sums to invoice gross
+  ---
+  duration_ms: 5.97909
+  type: 'test'
+  ...
+# Subtest: Payout amount must be bounded positive integer and wallet accounts for reservations
+ok 13 - Payout amount must be bounded positive integer and wallet accounts for reservations
+  ---
+  duration_ms: 0.363777
+  type: 'test'
+  ...
+# Subtest: Stable invoice number
+ok 14 - Stable invoice number
+  ---
+  duration_ms: 0.385369
+  type: 'test'
+  ...
+# Subtest: positive IDs reject decimals and zero
+ok 15 - positive IDs reject decimals and zero
+  ---
+  duration_ms: 1.106223
+  type: 'test'
+  ...
+# Subtest: student can only read owned learning record
+ok 16 - student can only read owned learning record
+  ---
+  duration_ms: 0.243539
+  type: 'test'
+  ...
+# Subtest: tutor writes own active enrollment only
+ok 17 - tutor writes own active enrollment only
+  ---
+  duration_ms: 1.219661
+  type: 'test'
+  ...
+# Subtest: Hifz entry requires valid Surah range and mistakes
+ok 18 - Hifz entry requires valid Surah range and mistakes
+  ---
+  duration_ms: 0.251311
+  type: 'test'
+  ...
+# Subtest: progress and score bounds
+ok 19 - progress and score bounds
+  ---
+  duration_ms: 0.192304
+  type: 'test'
+  ...
+# Subtest: Hifz dates reject impossible day
+ok 20 - Hifz dates reject impossible day
+  ---
+  duration_ms: 0.570763
+  type: 'test'
+  ...
+# Subtest: Tutor approval cannot skip testing
+ok 21 - Tutor approval cannot skip testing
+  ---
+  duration_ms: 0.709277
+  type: 'test'
+  ...
+# Subtest: exam requires category minimums as well as 75 total
+ok 22 - exam requires category minimums as well as 75 total
+  ---
+  duration_ms: 0.793312
+  type: 'test'
+  ...
+# Subtest: meet URL strict host and format
+ok 23 - meet URL strict host and format
+  ---
+  duration_ms: 1.448249
+  type: 'test'
+  ...
+# Subtest: offset dates become UTC
+ok 24 - offset dates become UTC
+  ---
+  duration_ms: 0.546007
+  type: 'test'
+  ...
+1..24
+# tests 24
+# suites 0
+# pass 24
+# fail 0
+# cancelled 0
+# skipped 0
+# todo 0
+# duration_ms 132.65669

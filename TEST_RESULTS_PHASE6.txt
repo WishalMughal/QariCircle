@@ -1,0 +1,20 @@
+Quran Academy Option B — Phase 6 local verification
+===============================================
+Platform: Node.js v22.16.0
+Command: cd backend && npm run check
+Result: PASS (JavaScript syntax validation)
+Command: cd backend && npm test
+Result: PASS (34/34 dependency-free rule + source contract tests)
+
+Not run / not verified here:
+- npm install: network error EAI_AGAIN fetching npm registry
+- Node/Express HTTP endpoints: required npm dependencies not downloaded
+- MySQL schema/migrations and Docker Compose: no MySQL/Docker service
+- Flutter analyze/test/build: Flutter SDK not installed
+- Android APK, Google Meet deep link, live payment integrations: not built/tested
+
+To run live integration tests on a local isolated database:
+SMOKE_ALLOW_MUTATION=yes SMOKE_API_BASE=http://127.0.0.1:4000/api npm run smoke
+
+This source package is a development build, NOT a production-ready mobile release.
+- Flutter widget test included: test/meeting_banner_test.dart (not executed here).

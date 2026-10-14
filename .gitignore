@@ -1,0 +1,13 @@
+**/node_modules/
+**/.env
+**/private_uploads/
+**/build/
+**/.dart_tool/
+**/.flutter-plugins*
+**/.metadata
+**/coverage/
+*.keystore
+*.jks
+*.key
+*.log
+.DS_Store
